@@ -1,126 +1,36 @@
-````markdown
-# SpendWise Dashboard Shell
+# SpendWise
 
-## Project Overview
+SpendWise is a simple budgeting application that helps users manage their budget and expenses. The project provides a dashboard for organizing budgeting information and uses JavaScript to collect user input, perform calculations, and display results in the browser console.
 
-SpendWise is a responsive financial dashboard shell designed to provide users with a clear overview of their personal spending.
+## Project Features
 
-This project focuses on creating the visual structure of the dashboard using modern CSS techniques. No JavaScript functionality is required for this stage.
+- Budget dashboard
+- Expense tracking structure
+- Budget and expense input using JavaScript
+- Remaining balance calculation
+- Reusable JavaScript functions
+- Console output showing budget results
+- Responsive dashboard layout
 
-## Features
+## JavaScript Concepts Implemented
 
-The dashboard includes:
+This week's SpendWise project uses JavaScript to process budgeting information and perform calculations.
 
-- Sidebar navigation menu
-- Dashboard header
-- Six financial category cards
-- Responsive layout
-- CSS Grid for the main page and card layout
-- Flexbox for navigation, header, and card content
-- CSS custom properties for the theme
-- Hover and keyboard focus animations
-- Dark theme using the user's system preference
+The main JavaScript concepts implemented are:
 
-## Financial Categories
+- Variables
+- Data types
+- User input
+- Calculations
+- Functions
+- Console output
 
-The dashboard contains six static financial categories:
+## Variables
 
-1. Food
-2. Transport
-3. Rent
-4. Entertainment
-5. Savings
-6. Utilities
+Variables are used to store important budgeting information in SpendWise.
 
-Each category displays realistic static financial information.
+The application uses variables to store the user's budget and expenses:
 
-## File Structure
-
-### index.html
-
-Contains the structure of the SpendWise dashboard, including:
-
-- Sidebar
-- Navigation menu
-- Header
-- User profile area
-- Financial category cards
-
-### style.css
-
-Contains all the visual styling for the dashboard.
-
-It includes:
-
-- CSS Grid
-- Flexbox
-- CSS custom properties
-- Responsive media queries
-- Hover animations
-- Keyboard focus animations
-- Dark theme
-
-### README.md
-
-Provides information about the project, its structure, and the technologies used.
-
-## CSS Grid
-
-CSS Grid is used for the main dashboard layout.
-
-The desktop layout contains:
-
-- A sidebar column
-- A main content column
-
-CSS Grid is also used to arrange the six financial cards.
-
-## Flexbox
-
-Flexbox is used for:
-
-- Sidebar navigation
-- Header content
-- Profile section
-- Financial card content
-
-## Responsive Design
-
-The dashboard changes to a single-column layout when the screen width is below 768px.
-
-This allows the dashboard to work better on smaller screens such as tablets and mobile devices.
-
-The responsive layout can be tested using the browser's DevTools Device Toolbar.
-
-## Micro-interactions
-
-The financial cards include subtle hover and keyboard focus effects.
-
-The animations use:
-
-- `transform`
-- `box-shadow`
-
-The transitions last 200ms, which is within the required 250ms limit.
-
-## Dark Theme
-
-The project includes a dark theme using:
-
-```css
-@media (prefers-color-scheme: dark)
-````
-
-Only the CSS custom property values are overridden to create the dark theme.
-
-## Technologies Used
-
-* HTML5
-* CSS3
-* CSS Grid
-* Flexbox
-* CSS Custom Properties
-* CSS Media Queries
-
-```
-```
+```javascript
+let budget = 0;
+let expenses = 0;
