@@ -1,105 +1,84 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpendWise Dashboard</title>
+    <title>SpendWise - Interactive Budget</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="dashboard">
+    <div class="container">
+        <header>
+            <h1>SpendWise</h1>
+            <p>Smart Budgeting Made Simple</p>
+        </header>
 
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="logo">
-                <h2>SpendWise</h2>
+        <section class="budget-section">
+            <h2>Set Your Budget</h2>
+
+            <input
+                type="number"
+                id="budgetInput"
+                placeholder="Enter your budget"
+            >
+
+            <button id="setBudgetBtn">Set Budget</button>
+        </section>
+
+        <section class="expense-section">
+            <h2>Add an Expense</h2>
+
+            <input
+                type="text"
+                id="expenseName"
+                placeholder="Expense name"
+            >
+
+            <input
+                type="number"
+                id="expenseAmount"
+                placeholder="Amount"
+            >
+
+            <button id="addExpenseBtn">Add Expense</button>
+        </section>
+
+        <section class="dashboard">
+            <h2>Budget Dashboard</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Budget</h3>
+                    <p id="budgetDisplay">KSh 0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Expenses</h3>
+                    <p id="expenseDisplay">KSh 0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Remaining Balance</h3>
+                    <p id="balanceDisplay">KSh 0</p>
+                </div>
             </div>
 
-            <nav class="navigation">
-                <a href="#" class="active">Dashboard</a>
-                <a href="#">Transactions</a>
-                <a href="#">Budgets</a>
-                <a href="#">Savings</a>
-                <a href="#">Reports</a>
-            </nav>
-        </aside>
+            <div class="message">
+                <p id="budgetMessage">Set your budget to begin.</p>
+            </div>
+        </section>
 
-        <!-- Main Content -->
-        <main class="main-content">
+        <section class="expenses">
+            <h2>Expense Records</h2>
 
-            <!-- Header -->
-            <header class="header">
-                <div>
-                    <h1>Dashboard</h1>
-                    <p>Welcome back! Here's your spending overview.</p>
-                </div>
-
-                <div class="profile">
-                    <span>👤</span>
-                    <strong>My Account</strong>
-                </div>
-            </header>
-
-            <!-- Dashboard Cards -->
-            <section class="cards">
-
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Food</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>KSh 8,500</strong>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Transport</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>KSh 5,200</strong>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Rent</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>KSh 25,000</strong>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Entertainment</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>KSh 3,500</strong>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Savings</h3>
-                        <p>Amount saved</p>
-                    </div>
-                    <strong>KSh 10,000</strong>
-                </article>
-
-                <article class="card" tabindex="0">
-                    <div>
-                        <h3>Utilities</h3>
-                        <p>Monthly spending</p>
-                    </div>
-                    <strong>KSh 4,800</strong>
-                </article>
-
-            </section>
-
-        </main>
-
+            <ul id="expenseList">
+                <li>No expenses added yet.</li>
+            </ul>
+        </section>
     </div>
-    
-<script src="script.js"></script>
 
+    <script src="script.js"></script>
 </body>
 </html>
-```
